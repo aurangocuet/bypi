@@ -1,0 +1,107 @@
+html {
+    font-size: 1rem;
+}
+
+body {
+    /* margin-top: 3vh; */
+    margin-bottom: 5vh;
+    background: #d6d8db;
+    /* background-image: linear-gradient( 135deg, #9cbced 10%, #fd5e086b 100%); */
+}
+
+.main{
+    background-image: linear-gradient( 135deg, #9cbced 10%, #D6D8DB 100%);  
+    border-left: white
+}
+
+/* Start for Sliding */
+
+#slideshow {
+    position: relative;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#slideshow > #slide {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+}
+
+#slideshow > #slidewrap {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(135deg, #9cbced 10%, #fd5e086b 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    opacity: 0.6;
+    z-index: 2;
+}
+
+#slideshow > #slide > img {
+    width: 100%;
+    height: 100%;
+    top: 2vh;
+    bottom: 2vh;
+    left: 2vh;
+    right: 2vh;
+    object-fit: fill;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+/* End for Sliding */
+
+/* Start for Logo & Name */
+
+#myheader {
+    /* background: #bef9f7; */      
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    margin-top: -30vh;
+}
+
+#logo {
+    height: 100%;
+    /* background: rebeccapurple; */
+    z-index: 3;
+}
+
+#logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+#logo img:hover{
+    transform: scale(1.5);
+}
+#name{
+    height: 100%;
+    width: 100%;
+    /* background: red;  */
+    z-index: 6;
+    display: table;
+    padding-right:5vw;
+}
+
+#namestyle{
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Bangla', Arial, sans-serif;
+    font-size: 5vw;
+    font-weight: bold;
+    color: #474A81;
+    object-fit: contain;
+    text-align: end;
+    line-height: initial;
+}
+
+/* End for Logo & Name */
+
+/* Start for Menus */
+#mymenubar{
+    font-size: 2vw;
+}
+/* End for Menus */
